@@ -1,5 +1,7 @@
 #Smart Ordering System
-<h5>( 통합 매장 관리 시스템 :: Targeting = OUTBACK STEAK HOUSE ) YAHA(Youthful Ardor, Hopeful Advance) Project </h5>
+통합 매장 관리 시스템 :: Targeting = OUTBACK STEAK HOUSE
+
+YAHA(Youthful Ardor, Hopeful Advance) Project
 
 프로젝트 참여 인원 인천대학교 김영성 인천대학교 김희승 인천대학교 송민아 인천대학교 이상현 인천대학교 임승한
 
