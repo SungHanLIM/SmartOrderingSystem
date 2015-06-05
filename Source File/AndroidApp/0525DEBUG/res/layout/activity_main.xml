@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#828282" >
+
+    <Button
+        android:id="@+id/kitchenbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/serverbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:background="#828282"
+        android:onClick="kOnClick"
+        android:text="KITCHEN"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        tools:context=".MainActivity" />
+
+    <Button
+        android:id="@+id/serverbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="113dp"
+        android:background="#828282"
+        android:onClick="sOnClick"
+        android:text="WAITER"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        tools:context=".MainActivity" />
+
+    <ImageView
+        android:id="@+id/logo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo3" />
+
+</RelativeLayout>

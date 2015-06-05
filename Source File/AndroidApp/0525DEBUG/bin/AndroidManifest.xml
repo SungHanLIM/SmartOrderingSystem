@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="exam.androidfirst"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
+    
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <permission android:name="exam.androidfirst.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="exam.androidfirst.permission.C2D_MESSAGE" />
+    
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    
+    
+    <application
+        android:largeHeap="true"
+        android:allowBackup="true"
+        android:icon="@drawable/logoicon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />    
+            </intent-filter>
+            </activity>
+            
+        
+            <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="exam.androidfirst" />
+            </intent-filter>
+            </receiver>
+            <service android:name=".GCMIntentService" />
+           <activity android:name=".KitchenState" android:label="KitchenState" />
+        <activity android:name=".ServerState" android:label="ServerState" />
+     <activity android:name=".c18_process.FullScreen" android:label="FullScreen"
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+    </application>
+
+</manifest>

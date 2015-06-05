@@ -1,0 +1,253 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#999999"
+    >
+    
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    
+    <Button
+        android:id="@+id/serverbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#FFFFFF"
+        android:text="SERVING" 
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+    
+    <Button
+        android:id="@+id/seatbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#FFFFFF"
+        android:text="SEAT" 
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/homebtn"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/backiconn"
+        android:onClick="hOnClick"
+        android:textColor="#999999"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+</LinearLayout>
+    
+
+<FrameLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <LinearLayout 
+        android:id="@+id/serverpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        >
+        
+       <Button
+        android:id="@+id/parse1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#999999"
+        android:text="새로고침"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:onClick="onClick"
+        />
+       
+       <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		/> 
+    </LinearLayout>
+    
+    
+    
+    
+    
+    <LinearLayout
+        android:id="@+id/seatpage"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        
+        <RelativeLayout
+            android:id="@+id/statecolor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            >
+            
+            <ImageView
+                android:id="@+id/state_bar_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#999999"
+                android:src="@drawable/state_bar_icon2" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+    		android:layout_width="match_parent"
+    		android:layout_height="match_parent" >
+
+    <GridLayout
+        android:id="@+id/gridLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="6"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/table1"
+            android:background="@drawable/table_icon2"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:text="Table1" />
+
+        <Button
+            android:id="@+id/table2"
+            android:background="@drawable/table_icon2"
+            android:text="Table2" />
+
+        <Button
+            android:id="@+id/table3"
+            android:background="@drawable/table_icon2"
+            android:text="Table3" />
+
+        <Button
+            android:id="@+id/table4"      
+            android:background="@drawable/table_icon2"
+            android:text="Table4" />
+
+        <Button
+            android:id="@+id/table5"
+            android:background="@drawable/table_icon2"
+            android:text="Table5" />
+
+        <Button
+            android:id="@+id/table6"
+            android:background="@drawable/table_icon2"
+            android:text="Table6" />
+
+        <Button
+            android:id="@+id/table7"
+            android:background="@drawable/table_icon2"
+            android:text="Table7" />
+
+        <Button
+            android:id="@+id/table8"
+            android:background="@drawable/table_icon2"
+            android:text="Table8" />
+
+        <Button
+            android:id="@+id/table9"
+            android:background="@drawable/table_icon2"
+            android:text="Table9" />
+
+        <Button
+            android:id="@+id/table10"
+            android:background="@drawable/table_icon2"
+            android:padding="3dp"
+            android:text="Table10" />
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="6"
+        android:layout_alignParentRight="true"
+        android:padding="20dp"
+        >
+        <Button
+            android:id="@+id/table11"
+            android:background="@drawable/table_icon2"
+            android:layout_marginRight="10dp"
+            android:padding="3dp"
+            android:text="Table11" />
+
+        <Button
+            android:id="@+id/table12"
+            android:background="@drawable/table_icon2"
+            android:padding="3dp"
+            android:text="Table12" />
+
+        <Button
+            android:id="@+id/table13"
+            android:background="@drawable/table_icon2"
+            android:padding="3dp"
+            android:text="Table13" />
+
+        <Button
+            android:id="@+id/table14"
+            android:background="@drawable/table_icon2"
+            android:padding="3dp"
+            android:text="Table14" />
+
+        <Button
+            android:id="@+id/table15"
+            android:background="@drawable/table_icon2"
+            android:padding="3dp"
+            android:text="Table15" />
+
+        <Button
+            android:id="@+id/table16"
+            android:background="@drawable/table_icon2"
+            android:padding="3dp"
+            android:text="Table16" />
+
+        <Button
+            android:id="@+id/table17"
+            android:background="@drawable/table_icon2"
+            android:padding="3dp"
+            android:text="Table17" />
+
+        <Button
+            android:id="@+id/table18"
+            android:background="@drawable/table_icon2"
+            android:padding="3dp"
+            android:text="Table18" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/parse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="29dp"
+        android:background="@drawable/refresh_icon"
+        android:minHeight="20dip"
+        android:minWidth="20dip"
+        android:onClick="onClick" />
+        </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
