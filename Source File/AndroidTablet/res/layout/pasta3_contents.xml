@@ -1,0 +1,41 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pasta_contents_popup3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HiddenActivity" >
+
+    <!-- 해당 액티비티 선언 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="5dip"
+            android:drawableTop="@drawable/pasta3"
+            android:text=" krName : 바질 페스토 올리브 파스타 \n\n enName : Basil Pesto Olive Pasta \n\n price : 19900 \n\n detail : 새우와 아스파라거스를 볶아 선드라이 \n\n 토마토, 바질 페스토 소스를 \n\n 토핑한 올리브오일 파스타 \n\n cookTime: 15분 \n\n"
+            android:textColor="@color/blue08"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:typeface="normal" >
+        </TextView>
+
+        <RatingBar
+            android:id="@+id/pasta3_ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:isIndicator="true"
+            android:progressDrawable="@layout/ratingbar_gold"
+            android:rating="0"
+            android:stepSize="0.5" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,41 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pasta_contents_popup2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HiddenActivity" >
+
+    <!-- 해당 액티비티 선언 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="5dip"
+            android:drawableTop="@drawable/pasta2"
+            android:text=" krName : 투움바 파스타 \n\n enName : Toowoomba Pasta \n\n price : 19900 \n\n detail : 최고급 파마산 치즈와 새우, \n\n 양송이를 함께 볶아 깊고 진한 크림소스 파스타 \n\n cookTime: 15분 \n\n"
+            android:textColor="@color/blue08"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:typeface="normal" >
+        </TextView>
+
+        <RatingBar
+            android:id="@+id/pasta2_ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:isIndicator="true"
+            android:progressDrawable="@layout/ratingbar_gold"
+            android:rating="2.8"
+            android:stepSize="0.5" />
+    </LinearLayout>
+
+</ScrollView>

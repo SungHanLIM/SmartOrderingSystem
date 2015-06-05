@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Smart Order</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="favorite_mtitle"><![CDATA[<]]> BEST TOP 5 <![CDATA[>]]></string>
+    <string name="exit_name">닫기</string>
+    <string name="usa_exit_name">close</string>
+    
+
+</resources>

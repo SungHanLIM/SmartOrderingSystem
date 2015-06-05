@@ -1,0 +1,98 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/steak_contents_popup2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HiddenActivity" >
+
+    <!-- 해당 액티비티 선언 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="5dip"
+            android:drawableTop="@drawable/steak2"
+            android:text=" krName : 갈릭 립아이 \n\n enName : Garlic Ribeye \n\n price : 34500 \n\n compose : 소고기, 꽃등심, 호주산, 280g \n\n detail : 발사믹 소스에 조리한 마늘이 어우러진 꽃등심 스테이크 \n\n cookTime: 20분 \n\n "
+            android:textColor="@color/blue08"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:typeface="normal" >
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="5dip"
+            android:drawableTop="@drawable/rib_eye"
+            android:text=" 꽃등심 \n\n RIB EYE \n\n 아웃백 립아이는 큰 등심에서 겉부분에 부착된 덧살과 \n\n 힘줄 등을 제거하여 가운데 부분만  정선한 꽃등심 부위를  사용하고 \n\n 있으며,  소의 부위 중에서 대표적으로 부드러운 육질로 선호도가 \n\n 가장 높은 고급 부위입니다. 스테이크로 드실 때 고소하면서 \n\n 짙은 풍미를 느끼기에 가장 적합한 부위입니다. "
+            android:textColor="@color/green08"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+                <RatingBar
+            android:id="@+id/steak2_ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:progressDrawable="@layout/ratingbar_gold"
+            android:rating="4"
+            android:stepSize="0.5"
+            android:isIndicator="true" />
+        
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/sidedish_1"
+            android:drawablePadding="5dip"
+            android:drawableRight="@drawable/sidedish_3"
+            android:text="사이드디쉬"
+            android:textColor="@color/orange08"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="더운야채"
+                android:textColor="@color/orange08"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginRight="80dp"
+                android:typeface="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="으깬감자"
+                android:textColor="@color/orange08"
+                android:layout_marginLeft="80dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

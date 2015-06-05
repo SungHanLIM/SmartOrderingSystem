@@ -1,0 +1,41 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appetizer_contents_popup3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HiddenActivity" >
+
+    <!-- 해당 액티비티 선언 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="5dip"
+            android:drawableTop="@drawable/appetizer3"
+            android:text=" krName : 오지 치즈 후라이즈 \n\n enName : Aussie Cheese Fries \n\n price : 18900 \n\n detail : 두툼한 감자튀김에 체다치즈, \n\n 잭치즈를 듬뿍녹여 베이컨을 뿌린 메뉴 \n\n  cookTime: 10분 \n\n"
+            android:textColor="@color/blue08"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:typeface="normal" >
+        </TextView>
+
+        <RatingBar
+            android:id="@+id/appetizer3_ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:isIndicator="true"
+            android:progressDrawable="@layout/ratingbar_gold"
+            android:rating="5"
+            android:stepSize="0.5" />
+    </LinearLayout>
+
+</ScrollView>

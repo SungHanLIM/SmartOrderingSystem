@@ -1,0 +1,41 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appetizer_contents_popup6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HiddenActivity" >
+
+    <!-- 해당 액티비티 선언 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="5dip"
+            android:drawableTop="@drawable/appetizer6"
+            android:text=" krName : 기브미 파이브 \n\n enName : Gimme Five \n\n price : 30900 \n\n compose : 닭고기, 국내산 / 돼지갈비, \n\n 프랑스산 /소고기, 호주산 \n\n detail : 인기 애피타이저 5가지를 \n\n 한번에 맛보세요 \n\n (골드 코스트 코코넛 쉬림프, 스파이시 비프 퀘사디아,\n\n 레인지랜드 립레츠, 블루밍 머쉬룸, 치킨핑거) \n\n cookTime: 10분 \n\n"
+            android:textColor="@color/blue08"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:typeface="normal" >
+        </TextView>
+
+        <RatingBar
+            android:id="@+id/appetizer6_ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:isIndicator="true"
+            android:progressDrawable="@layout/ratingbar_gold"
+            android:rating="3.5"
+            android:stepSize="0.5" />
+    </LinearLayout>
+
+</ScrollView>

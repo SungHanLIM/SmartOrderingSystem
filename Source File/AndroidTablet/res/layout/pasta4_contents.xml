@@ -1,0 +1,41 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pasta_contents_popup4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HiddenActivity" >
+
+    <!-- 해당 액티비티 선언 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="5dip"
+            android:drawableTop="@drawable/pasta4"
+            android:text=" krName : 씨푸드 뽀모도로 \n\n enName : Seafood Pomodoro \n\n price : 19500 \n\n detail : 쉬림프, 깔라마리가 들어간 \n\n 후레쉬 토마토 소스 파스타 \n\n cookTime: 15분 \n\n "
+            android:textColor="@color/blue08"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:typeface="normal" >
+        </TextView>
+
+        <RatingBar
+            android:id="@+id/pasta4_ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:isIndicator="true"
+            android:progressDrawable="@layout/ratingbar_gold"
+            android:rating="4"
+            android:stepSize="0.5" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,84 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/steak_contents_popup4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HiddenActivity" >
+
+    <!-- 해당 액티비티 선언 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="5dip"
+            android:drawableTop="@drawable/steak4"
+            android:text=" krName : 우드 화이어 그릴 스테이크 오 포와 \n\n enName : Wood Fire Grill Steak Au Poivre \n\n price : 36500 \n\n compose : 소고기, 채끝등심, 호주산, 280g \n\n detail : 참나무로 구운 프렌치 페퍼 채끝등심 스테이크 \n\n (*일부매장 프레임 그릴드 방식 제공됩니다) \n\n cookTime: 20분 \n\n "
+            android:textColor="@color/blue08"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:typeface="normal" >
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="5dip"
+            android:drawableTop="@drawable/strip"
+            android:text=" 채끝등심 \n\n STRIP \n\n  채끝등심으로 갈비 아래부터 허리까지의 등심부위를 의미하며,\n\n 등심에 비해 지방은 다소 적으나 스테이크로서의 풍미는 \n\n 상당히 좋아서 스테이크 매니아들이 즐겨 찾는 부위입니다.\n\n 미국의 뉴욕주와 비슷한 모양의 채끝 등심을 특별히 \n\n 뉴욕스트립으로 부르기도 합니다.\n\n KIDS LOVE AUSTRALIAN BEEF \n\n 뉴욕스트립 스테이크 원료인 호주 청정우는 호주에서도 \n\n 가장 청정한 목장에서 태어나는 순간부터 아웃백에 들어오는 \n\n 순간까지 깨끗하게 관리 받고 안전하게 공급되는 쇠고기입니다."
+            android:textColor="@color/green08"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <RatingBar
+            android:id="@+id/steak4_ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:isIndicator="true"
+            android:progressDrawable="@layout/ratingbar_gold"
+            android:rating="4.5"
+            android:stepSize="0.5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:drawableBottom="@drawable/sidedish_4"
+            android:drawablePadding="5dip"
+            android:text="사이드디쉬"
+            android:textColor="@color/orange08"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="감자튀김"
+                android:textColor="@color/orange08"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

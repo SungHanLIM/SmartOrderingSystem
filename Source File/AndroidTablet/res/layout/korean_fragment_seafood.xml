@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 씨푸드1 -->
+    
+    <ImageView
+        android:id="@+id/seafood_image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/seafood1_image_button"/>
+      
+    <Button
+        android:id="@+id/seafood_minus_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seafood_plus_button1"
+        android:layout_below="@+id/seafood_image1"
+        android:layout_marginLeft="300dp"
+        android:text=" - "
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/seafood_count_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seafood_count_text2"
+        android:layout_below="@+id/seafood_image1"
+        android:layout_marginLeft="355dp"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/seafood_plus_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seafood_image1"
+        android:layout_marginLeft="380dp"
+        android:text=" + "
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/seafood_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seafood_image1"
+        android:layout_marginLeft="100dp"
+        android:textStyle="bold|italic"
+        android:textSize="15dp"
+        android:textColor="@color/green10" />
+
+    <!-- 씨푸드2 -->
+    
+    <ImageView
+        android:id="@+id/seafood_image2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_toRightOf="@+id/seafood_image1"
+        android:background="@drawable/seafood2_image_button" />
+    
+      <Button
+        android:id="@+id/seafood_minus_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seafood_plus_button2"
+        android:layout_below="@+id/seafood_image2"
+        android:layout_marginLeft="700dp"
+        android:text=" - "
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/seafood_count_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seafood_image2"
+        android:layout_marginLeft="755dp"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/seafood_plus_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seafood_image2"
+        android:layout_marginLeft="780dp"
+        android:text=" + "
+        android:textSize="23dp" />
+    
+    <TextView
+        android:id="@+id/seafood_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seafood_image2"
+        android:layout_marginLeft="100dp"
+        android:layout_toRightOf="@+id/seafood_image1"
+        android:textStyle="bold|italic"
+        android:textSize="15dp"
+        android:textColor="@color/green10" />
+
+    <!-- 씨푸드3 -->
+    
+    <ImageView
+        android:id="@+id/seafood_image3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_toRightOf="@+id/seafood_image2"
+        android:background="@drawable/seafood3_image_button" />
+
+     <Button
+        android:id="@+id/seafood_minus_button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seafood_plus_button3"
+        android:layout_below="@+id/seafood_image3"
+        android:layout_marginLeft="1100dp"
+        android:text=" - "
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/seafood_count_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seafood_image3"
+        android:layout_marginLeft="1155dp"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/seafood_plus_button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seafood_image3"
+        android:layout_marginLeft="1180dp"
+        android:text=" + "
+        android:textSize="23dp" />
+    
+    <TextView
+        android:id="@+id/seafood_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seafood_image3"
+        android:layout_marginLeft="100dp"
+        android:layout_toRightOf="@+id/seafood_image2"
+        android:textStyle="bold|italic"
+        android:textSize="15dp"
+        android:textColor="@color/green10" />
+
+
+</RelativeLayout>

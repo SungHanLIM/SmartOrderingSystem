@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/favorite_background" >
+
+    
+    <ImageView
+        android:id="@+id/favorite_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp"
+        android:src="@drawable/best_top5"/>
+    
+    
+    <TextView
+        android:id="@+id/favorite_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="60dp"
+        android:textColor="@color/orange10"
+        android:textSize="35dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/favorite_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/favorite_text1"
+        android:layout_marginLeft="60dp"
+        android:textColor="@color/orange10"
+        android:textSize="35dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/favorite_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/favorite_text2"
+        android:layout_marginLeft="60dp"
+        android:textColor="@color/orange10"
+        android:textSize="35dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/favorite_text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/favorite_text3"
+        android:layout_marginLeft="60dp"
+        android:textColor="@color/orange10"
+        android:textSize="35dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/favorite_text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/favorite_text4"
+        android:layout_marginLeft="60dp"
+        android:textColor="@color/orange10"
+        android:textSize="35dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/favorite_text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/favorite_text5"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/green10"
+        android:textSize="35dp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

@@ -1,0 +1,263 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 파스타1 -->
+
+    <ImageView
+        android:id="@+id/pasta_image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/pasta1_image_button"  />
+
+    <Button
+        android:id="@+id/pasta_minus_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pasta_plus_button1"
+        android:layout_below="@+id/pasta_image1"
+        android:layout_marginLeft="300dp"
+        android:text=" - "
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/pasta_count_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pasta_count_text2"
+        android:layout_below="@+id/pasta_image1"
+        android:layout_marginLeft="355dp"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/pasta_plus_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pasta_image1"
+        android:layout_marginLeft="380dp"
+        android:text=" + "
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/pasta_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pasta_image1"
+        android:layout_marginLeft="100dp"
+        android:textColor="@color/green10"
+        android:textSize="15dp"
+        android:textStyle="bold|italic" />
+
+    <!-- 파스타2 -->
+
+    <ImageView
+        android:id="@+id/pasta_image2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_toRightOf="@+id/pasta_image1"
+        android:background="@drawable/pasta2_image_button" />
+
+    <Button
+        android:id="@+id/pasta_minus_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pasta_plus_button2"
+        android:layout_below="@+id/pasta_image2"
+        android:layout_marginLeft="700dp"
+        android:text=" - "
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/pasta_count_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pasta_image2"
+        android:layout_marginLeft="755dp"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/pasta_plus_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pasta_image2"
+        android:layout_marginLeft="780dp"
+        android:text=" + "
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/pasta_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pasta_image2"
+        android:layout_marginLeft="100dp"
+        android:layout_toRightOf="@+id/pasta_image1"
+        android:textColor="@color/green10"
+        android:textSize="15dp"
+        android:textStyle="bold|italic" />
+
+    <!-- 파스타3 -->
+
+    <ImageView
+        android:id="@+id/pasta_image3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_toRightOf="@+id/pasta_image2"
+        android:background="@drawable/pasta3_image_button" />
+
+    <Button
+        android:id="@+id/pasta_minus_button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pasta_plus_button3"
+        android:layout_below="@+id/pasta_image3"
+        android:layout_marginLeft="1100dp"
+        android:text=" - "
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/pasta_count_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pasta_image3"
+        android:layout_marginLeft="1155dp"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/pasta_plus_button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pasta_image3"
+        android:layout_marginLeft="1180dp"
+        android:text=" + "
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/pasta_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pasta_image3"
+        android:layout_marginLeft="100dp"
+        android:layout_toRightOf="@+id/pasta_image2"
+        android:textColor="@color/green10"
+        android:textSize="15dp"
+        android:textStyle="bold|italic" />
+
+    <!-- 파스타4 -->
+
+    <ImageView
+        android:id="@+id/pasta_image4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pasta_text1"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/pasta4_image_button" />
+
+    <Button
+        android:id="@+id/pasta_minus_button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pasta_plus_button4"
+        android:layout_alignLeft="@+id/pasta_minus_button1"
+        android:layout_alignRight="@+id/pasta_minus_button1"
+        android:layout_below="@+id/pasta_image4"
+        android:text=" - "
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/pasta_count_text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pasta_plus_button4"
+        android:layout_below="@+id/pasta_image4"
+        android:layout_marginLeft="355dp"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/pasta_plus_button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/pasta_plus_button1"
+        android:layout_below="@+id/pasta_image4"
+        android:layout_marginLeft="380dp"
+        android:text=" + "
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/pasta_text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pasta_image4"
+        android:layout_marginLeft="100dp"
+        android:textColor="@color/green10"
+        android:textSize="15dp"
+        android:textStyle="bold|italic" />
+
+    <!-- 파스타5 -->
+
+    <ImageView
+        android:id="@+id/pasta_image5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pasta_text1"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/pasta_image4"
+        android:background="@drawable/pasta5_image_button" />
+
+    <Button
+        android:id="@+id/pasta_minus_button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pasta_plus_button5"
+        android:layout_alignLeft="@+id/pasta_minus_button2"
+        android:layout_alignRight="@+id/pasta_minus_button2"
+        android:layout_below="@+id/pasta_image5"
+        android:text=" - "
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/pasta_count_text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pasta_plus_button5"
+        android:layout_below="@+id/pasta_image5"
+        android:layout_marginLeft="755dp"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/pasta_plus_button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/pasta_plus_button2"
+        android:layout_below="@+id/pasta_image5"
+        android:layout_marginLeft="780dp"
+        android:text=" + "
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/pasta_text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pasta_image5"
+        android:layout_marginLeft="100dp"
+        android:layout_toRightOf="@+id/pasta_image4"
+        android:textColor="@color/green10"
+        android:textSize="15dp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

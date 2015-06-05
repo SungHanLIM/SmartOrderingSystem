@@ -1,0 +1,175 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/exit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/exit_icon_button"
+            android:clickable="true"
+            android:padding="0sp"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/favorite_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/favorite_icon_button"
+            android:clickable="true"
+            android:onClick="selectFragment"
+            android:padding="0sp"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/steak_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/steak_icon_button"
+            android:onClick="selectFragment"
+            android:padding="0sp"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/appetizer_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/appetizer_icon_button"
+            android:onClick="selectFragment"
+            android:padding="0sp"
+            android:scaleType="centerCrop" />
+
+        <!-- android:src="@drawable/appetizer_icon" /> -->
+
+        <ImageView
+            android:id="@+id/pasta_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/pasta_icon_button"
+            android:onClick="selectFragment"
+            android:padding="0sp"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/salad_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/salad_icon_button"
+            android:onClick="selectFragment"
+            android:padding="0sp"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/seafood_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/seafood_icon_button"
+            android:onClick="selectFragment"
+            android:padding="0sp"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="545dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/home_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/home_icon_button"
+            android:padding="0sp"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/call_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/call_icon_button"
+            android:padding="0sp"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/specification_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/specification_icon_button"
+            android:padding="0sp"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/order_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/order_icon_button"
+            android:onClick="order_OnClick"
+            android:padding="0sp"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/maindish_listimage" />
+
+            <ListView
+                android:id="@+id/list_spec"
+                android:layout_width="380dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp" >
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/sidedish_listimage" />
+
+            <ListView
+                android:id="@+id/list_spec2"
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|bottom"
+                android:layout_marginLeft="5dp" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

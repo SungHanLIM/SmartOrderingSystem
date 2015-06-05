@@ -1,0 +1,96 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/steak_contents_popup3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HiddenActivity" >
+
+    <!-- 해당 액티비티 선언 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="5dip"
+            android:drawableTop="@drawable/steak3"
+            android:text=" krName : 휠렛 오스카 스타일 \n\n enName : Filet Oscar Style \n\n price : 38000 \n\n compose : 소고기, 안심, 호주산, 180g \n\n detail : 치즈소스에 새우, 아스파라거스가 곁들여진 안심 스테이크 \n\n cookTime: 20분 \n\n "
+            android:textColor="@color/blue08"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:typeface="normal" >
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="5dip"
+            android:drawableTop="@drawable/tender_loin"
+            android:text=" 안심 \n\n TENDERLOIN \n\n 채끝등심과 척추뼈를 사이에 두고 안쪽에 \n\n 부착된 부위로 소고기 중 가장 연한 부위로 \n\n 알려져 있습니다. 소 한마리에서 약 6Kg내외로 생산되는 \n\n 소량 부위로 지방이 적고 부드러운 맛이 좋아서 \n\n 스테이크의 풍미를 잘 살려줍니다. 아웃백에서는 \n\n 샤토 브리앙 포 투 스테이크로 최고급의 안심 스테이크를 맛보실 수 있습니다.\n\n KIDS LOVE AUSTRALIAN BEEF \n\n 뉴욕스트립 스테이크 원료인 호주 청정우는 호주에서도 \n\n 가장 청정한 목장에서 태어나는 순간부터 아웃백에 들어오는 순간까지 \n\n 깨끗하게 관리 받고 안전하게 공급되는 쇠고기입니다. \n\n "
+            android:textColor="@color/green08"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <RatingBar
+            android:id="@+id/steak3_ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:isIndicator="true"
+            android:progressDrawable="@layout/ratingbar_gold"
+            android:rating="5"
+            android:stepSize="0.5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/sidedish_1"
+            android:drawablePadding="5dip"
+            android:drawableRight="@drawable/sidedish_3"
+            android:text="사이드디쉬"
+            android:textColor="@color/orange08"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="80dp"
+                android:text="더운야채"
+                android:textColor="@color/orange08"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="80dp"
+                android:text="으깬감자"
+                android:textColor="@color/orange08"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
