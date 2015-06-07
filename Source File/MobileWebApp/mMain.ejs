@@ -14,75 +14,72 @@
 
 	<style>
 	.section-contents {
-  background: white;
-  border: 1px solid #111;
-  padding: 8px 15px;
-  font-size: 16px;
-  color: black;
-  letter-spacing: 0;
-  border-radius: 5px 5px 5px 5px;
-  font-weight: normal;
-  margin-bottom: 0;
-  overflow: hidden;
-}
+		background: white;
+		border: 1px solid #111;
+		padding: 8px 15px;
+	  	font-size: 16px;
+	  	color: black;
+	  	letter-spacing: 0;
+	  	border-radius: 5px 5px 5px 5px;
+	  	font-weight: normal;
+	  	margin-bottom: 0;
+	  	overflow: hidden;
+	}
 	.ui-btn {
-  padding: .3em 1em;
-}
+  		padding: .3em 1em;
+	}
 	</style>
 	<script src="/javascripts/jquery-1.11.2.js"></script>
 	<script src="/javascripts/jquery.mobile-1.4.5.js"></script>
 	<script src="/javascripts/bootstrap-carousel.js"></script> 
 	<script src="/javascripts/bootstrap.min.js"></script>
-
 	<script src="/javascripts/jquery.ratings.js"></script>
-        <script src="/javascripts/example.js"></script>
-
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="/javascripts/jquery.min.js"><\/script>')</script>
-        <!-- <script src="/javascripts/jquery.mobile-1.4.5.js"></script> -->
-        <script src="/javascripts/jquery.remodal.js"></script>
-
-</head>
-
-<body>
-<div data-role="page" id="main" data-theme="a">
-	<!-- Header -->
-<a href="#mypanel" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-a ui-btn-inline"></a> 
-<a id="btn-like" class="ui-btn ui-shadow ui-corner-all ui-icon-heart ui-btn-icon-notext ui-btn-a ui-btn-inline"></a>
-<a id="section" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-text ui-btn-a ui-btn-inline ui-btn-right" style="margin-top: 0.2%">Like</a>
-
-	<div data-role="header" data-theme="a" >
-
-		<script>
+	<script src="/javascripts/example.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/javascripts/jquery.min.js"><\/script>')</script>
+	<script src="/javascripts/jquery.remodal.js"></script>
+	
+	<script>
 		$("#btn-like").click( function () {
 		var url_value = 'like';
 		$.ajax({
-	            type : "POST",
-        	    url: url_value,
-	            async: false,
-       		    data:{},
+			type : "POST",
+        	url: url_value,
+	        async: false,
+       		data:{},
 		    success: response_json
-           		});
+           	});
 		});
 
 		function response_json() {
-		    var url_value = 'getLikeCnt';
+	    	var url_value = 'getLikeCnt';
 		    $.ajax({
-           		 type : "GET",
-            		 url: url_value,
-           		 async: false,
-		         dataType:'json',
-        		 success: response_json2
-           		 });
+           		type : "GET",
+            	url: url_value,
+           		async: false,
+		        dataType:'json',
+        		success: response_json2
+			});
 		}
 
 		function response_json2(json) {
 		    var information = json.data;
 		    var like_count = information.likeCnt;
 		    $("#section").html('').append(like_count);
-                }
-
+		}
 		</script>
+</head>
+
+<body>
+<div data-role="page" id="main" data-theme="a">
+
+<!-- Header -->
+<a href="#mypanel" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-a ui-btn-inline"></a> 
+<a id="btn-like" class="ui-btn ui-shadow ui-corner-all ui-icon-heart ui-btn-icon-notext ui-btn-a ui-btn-inline"></a>
+<a id="section" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-text ui-btn-a ui-btn-inline ui-btn-right" style="margin-top: 0.2%">Like</a>
+
+	<div data-role="header" data-theme="a" >
+
 
 		<div align="center">
 			<img src="/images/header.jpg" width="100%" height="100%" >
@@ -117,6 +114,7 @@
   	border: 1px solid #000;
 	}
 	</style>
+	
     <div data-role="content">
 		<div class="section-main"><p>
 			<div class="section-title" align="center">
@@ -152,6 +150,7 @@
 					  			</div>
 					    	</div>
 						</div><br>
+	
 						<!-- Controls -->
 						<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
 						<span aria-hidden="true"><img src="/images/icons/carat-l-white.png" /></span>
@@ -159,9 +158,9 @@
 						<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
 					   	<span aria-hidden="true"><img src="/images/icons/carat-r-white.png" /></span>
 						</a>
-
 					</div>
 				</div>
+	
 				<h2 class="mMain-title" align="center"> EVENTS <h2>
    					<div class="section-contents" align="center">
 						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">

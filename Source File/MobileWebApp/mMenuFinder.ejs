@@ -11,6 +11,7 @@
     results[i].compose,  // 음식 재료
     results[i].category  // 카테고리
 -->
+
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -25,62 +26,57 @@
 	<link rel="stylesheet" href="/stylesheets/jquery.remodal.css">
 
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-        <script src="/javascripts/bootstrap-carousel.js"></script>
-        <script src="/javascripts/bootstrap.min.js"></script>
-
-        <script src="/javascripts/jquery.ratings.js"></script>
-<!--        <script src="/javascripts/example.js"></script> -->
-
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="/javascripts/jquery.min.js"><\/script>')</script>
-
-        <script src="/javascripts/jquery.remodal.js"></script>
+	<script src="/javascripts/bootstrap-carousel.js"></script>
+	<script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/jquery.ratings.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/javascripts/jquery.min.js"><\/script>')</script>
+	<script src="/javascripts/jquery.remodal.js"></script>
 
 	<style>
 	.remodal-star {
-	  color: #EF9F0E;
-	  border: 2px solid #E56508;
-	  background: #f4f4f4;
+		color: #EF9F0E;
+		border: 2px solid #E56508;
+		background: #f4f4f4;
 	}
-
 	div ul li {
-float: left;
-list-style:none;
-}
+		float: left;
+		list-style:none;
+	}
+	
 	#btn-like1, #btn-like2, #btn-like3, #btn-like4, #btn-like5 {
-	background-color : #FCF23F;
+		background-color : #FCF23F;
 	}
 	#btn-exit {
-        background-color : #0600FF;
-        }
+		background-color : #0600FF;
+	}
 	h2 {
-	font-size : 100%;
+		font-size : 100%;
 	}
 	.btn_detail {
-  display: inline-block;
-  padding: 0% 0%;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.42857143;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  touch-action: manipulation;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
-}
+		display: inline-block;
+		padding: 0% 0%;
+		margin-bottom: 0;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.42857143;
+	  	text-align: center;
+	  	white-space: nowrap;
+	  	vertical-align: middle;
+	  	touch-action: manipulation;
+	  	cursor: pointer;
+	  	-webkit-user-select: none;
+	  	-moz-user-select: none;
+	  	-ms-user-select: none;
+	  	user-select: none;
+	  	background-image: none;
+	  	border: 1px solid transparent;
+	  	border-radius: 4px;
+	}
 	</style>
 </head>
 
 <body>
-
 	<div data-role="page" id="main" data-theme="a">
 	
 		<!-- Header -->
@@ -90,251 +86,237 @@ list-style:none;
 			</div>
 		</div>
 		<!--End Header  -->
-
-	<!-- Panel Attribute -->
-	<!-- End Panel Attribute -->
 	
-	<!-- 메뉴 선택 이미지 버튼 -->
-	<div data-role="content">
-		<div class="section-main"><p>
-			<div class="section-title" align="center">
-				<img src="/images/tableNumberLogo00.png" width="100%" height="20%">
-				<h2 class="mMain-title" align="center">OUTBACK STEAK HOUSE<h2>
-					<div class="section-contents" align="center">
-						<div data-role="content" align="center" class="menuBanner">
-							<a onclick="location.href='/mMenuFinder?category=스테이크'" class="ui-link"><img src="/images/menuSteak.jpg" width="100%" height="10%"></a>
-                                                        <a onclick="location.href='/mMenuFinder?category=샐러드'" class="ui-link"><img src="/images/menuSalad.jpg" width="100%" height="10%"></a>
-                                                        <a onclick="location.href='/mMenuFinder?category=오지타이저'" class="ui-link"><img src="/images/menuOz.jpg" width="100%" height="10%"></a>
-                                                        <a onclick="location.href='/mMenuFinder?category=씨푸드'" class="ui-link"><img src="/images/menuSeefood.jpg" width="100%" height="10%"></a>
-                                                        <a onclick="location.href='/mMenuFinder?category=페이버릿'" class="ui-link"><img src="/images/menuFavorite.jpg" width="100%" height="10%"></a>
-                                                        <a onclick="location.href='/mMenuFinder?category=파스타'" class="ui-link"><img src="/images/menuPasta.jpg" width="100%" height="10%"></a>
+		<!-- 메뉴 선택 이미지 버튼 -->
+		<div data-role="content">
+			<div class="section-main"><p>
+				<div class="section-title" align="center">
+					<img src="/images/tableNumberLogo00.png" width="100%" height="20%">
+					<h2 class="mMain-title" align="center">OUTBACK STEAK HOUSE<h2>
+						<div class="section-contents" align="center">
+							<div data-role="content" align="center" class="menuBanner">
+								<a onclick="location.href='/mMenuFinder?category=스테이크'" class="ui-link"><img src="/images/menuSteak.jpg" width="100%" height="10%"></a>
+								<a onclick="location.href='/mMenuFinder?category=샐러드'" class="ui-link"><img src="/images/menuSalad.jpg" width="100%" height="10%"></a>
+								<a onclick="location.href='/mMenuFinder?category=오지타이저'" class="ui-link"><img src="/images/menuOz.jpg" width="100%" height="10%"></a>
+	                            <a onclick="location.href='/mMenuFinder?category=씨푸드'" class="ui-link"><img src="/images/menuSeefood.jpg" width="100%" height="10%"></a>
+	                            <a onclick="location.href='/mMenuFinder?category=페이버릿'" class="ui-link"><img src="/images/menuFavorite.jpg" width="100%" height="10%"></a>
+	                            <a onclick="location.href='/mMenuFinder?category=파스타'" class="ui-link"><img src="/images/menuPasta.jpg" width="100%" height="10%"></a>
+							</div>
 						</div>
-					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-	<!-- End 메뉴 선택 이미지 버튼 --> 
+		<!-- End 메뉴 선택 이미지 버튼 --> 
 
-	<!-- Contetns :: 메뉴 출력 -->
-
-	<div align="center">
-		<div class="section-main"><p>
-			<div class="section-title" align="center">
-				<h2 class="mMain-title" align="center">MENU<h2><hr>
-				<% for(var i=0; i<results.length; i++){ %>
-				<p class="mBusinessBigText" style="margin-bottom: 0px; margin-bottom: 0px;padding-top: 8px;"><%= results[i].id %>. <%= results[i].krName %></p>
-				<p class="mBusinessMiddleText" style="margin-bottom: 0px;">( <%= results[i].enName %> )</p>
-				<img src="<%= results[i].picture %>" width="100%" height="30%"/>
-				<p class="mBusinessText" style="margin-bottom: 0px;">가격(price) : <%= results[i].price %>원</p>
-				<p class="mBusinessText" style="margin-bottom: 0px;">재료(ingredient) : <%= results[i].compose %></p>
-				<p class="mBusinessText" style="margin-bottom: 0px;">조리시간(Cooking Time) : <%= results[i].cookTime %>분</p>
-				<br><p class='mBusinessMiddleText' style="margin-bottom: 5px;">평균 별점 (Average Grade)</p>	
-				<p class='mBusinessMiddleText' style="margin-bottom: 5px;">( 참여인원 : <%= results[i].avgCnt %>명 )</p>
-
-				<p class="<%= results[i].id %>" style="margin-bottom: 0px;"></p> 
-
-                                <!-- 평균 별점 Section -->				
-				<script>
-				var starId = <%= results[i].id %>;
-				var starAvg = <%= results[i].starAvg %>; 
-                               	// console.log(starId + "의 별 평점 : " + starAvg);
-                                var isNull= null;
-                                if( starAvg == isNull){
-                                var ratingAvg = "<div class='section-contents2'><img src='/images/star00.png' width='50%'></div><br>";
-                                $("." + starId ).html('').append(ratingAvg);
-                                }
-                                if( 0.5 <= starAvg && starAvg <= 1.4 ){
-                                var ratingAvg = "<div class='section-contents2'><img src='/images/star01.png' width='50%'></div><br>";
-                                $("." + starId ).html('').append(ratingAvg);
-                                }
-                                if( 1.5 <= starAvg && starAvg <= 2.4 ){
-                                var ratingAvg = "<div class='section-contents2'><img src='/images/star02.png' width='50%'></div><br>";
-                                $("." + starId ).html('').append(ratingAvg);
-                                }
-                                if( 2.5 <= starAvg && starAvg <= 3.4 ){
-                                var ratingAvg = "<div class='section-contents2'><img src='/images/star03.png' width='50%'></div><br>";
-                                $("." + starId ).html('').append(ratingAvg);
-                                }
-                                if( 3.5 <= starAvg && starAvg <= 4.4 ){
-                                var ratingAvg = "<div class='section-contents2'><img src='/images/star04.png' width='50%'></div><br>";
-                                $("." + starId ).html('').append(ratingAvg);
-                                }
-                                if( 4.5 <= starAvg && starAvg <= 5.4 ){
-                                var ratingAvg = "<div class='section-contents2'><img src='/images/star05.png' width='50%'></div><br>";
-                                $("." + starId ).html('').append(ratingAvg);
-                                }
-                                </script>
-				<!-- 평균 별점 Section 끝 -->
-                                <a class="remodal-confirm" onclick="location.href='http://117.16.231.212:8010/mAvgStar'">평가하기</a>
-				<a id="<%=results[i].id %>" class="remodal-cancel" href="#modal">자세히보기</a>
-
-				<% } %>   
-			</div>
-		</div>
-	</div>
- 	<!-- End Contetns -->
-<!-- Modal -->
-<div class="remodal" data-remodal-id="modal">
-
-<!-- <div class="modal-header" align="center"></div> -->
-<div class="modal-body" align="center"></div>
-                <div class="modal-footer">
-                </div>
-  <br>
-  <a class="remodal-cancel" href="#">Cancel</a>
-  <a class="remodal-confirm" href="#">OK</a>
-</div>
-
-
-<script>
-<% for(var i=0; i<results.length; i++){ %>
-	//console.log(<%= results[i].id %>);	//디버깅 작업
-	$('#'+<%= results[i].id %>).click( function(){ test('menuFinder/detail?id='+<%= results[i].id %>) } );
-<% } %>
-
-function test(value){
-	var url_value= value;
-	$.ajax({
-		type : "GET",
-	   	url: url_value,
-		async: false,
-		dataType:'json',
-		success: response_json
-		});
-}
-function response_json(json) {
-	//주 메뉴 정보
-    var infomation = json.data;
-    var info_krName = infomation.krName;
-    var info_enName = infomation.enName;
-    var info_cookTime = infomation.cookTime;
-    var info_price = infomation.price;
-    var info_compose = infomation.compose;
-    var info_detail = infomation.detail;
-    var info_ingre_picture = infomation.ingre_picture;
-    var info_ingre_krName = infomation.ingre_krName;
-    var info_ingre_enName = infomation.ingre_enName;
-    var info_ingre_detail = infomation.ingre_detail;
-    var info_ingre_addTitle = infomation.ingre_addTitle;
-    var info_ingre_addDetail = infomation.ingre_addDetail;
-
-	//mobile 상에서 출력 이미지 없을 시 <img src=''> < />
-	// '?' 모양으로 출력되기 때문에 java script 코드를 변수로 대입하여 사용
-	var source01 = "<img src='";
-	var source02 = "'/><br>";
-
-	//내용물이 null값인지 아닌지 확인
-	var isNull= null;
-	if(info_ingre_krName==isNull){
-		info_ingre_krName="";
-	}
-	if(info_ingre_enName==isNull){
-    	info_ingre_enName="";
-    }
-	if(info_ingre_detail==isNull){
-		info_ingre_detail="";
-	}
-	if(info_ingre_addTitle==isNull){
-    	info_ingre_addTitle="";
-    }
-	if(info_ingre_addDetail==isNull){
-    	info_ingre_addDetail="";
-	}
-	if(info_ingre_picture==isNull){
-    	info_ingre_picture="";
-		source01="";            //Main Menu 이미지  없을 시 이미지 부분 공백 처리
-		source02="";
-	}
+		<!-- Contetns :: 메뉴 출력 -->
+		<div align="center">
+			<div class="section-main"><p>
+				<div class="section-title" align="center">
+					<h2 class="mMain-title" align="center">MENU<h2><hr>
+					<% for(var i=0; i<results.length; i++){ %>
+					<p class="mBusinessBigText" style="margin-bottom: 0px; margin-bottom: 0px;padding-top: 8px;"><%= results[i].id %>. <%= results[i].krName %></p>
+					<p class="mBusinessMiddleText" style="margin-bottom: 0px;">( <%= results[i].enName %> )</p>
+					<img src="<%= results[i].picture %>" width="100%" height="30%"/>
+					<p class="mBusinessText" style="margin-bottom: 0px;">가격(price) : <%= results[i].price %>원</p>
+					<p class="mBusinessText" style="margin-bottom: 0px;">재료(ingredient) : <%= results[i].compose %></p>
+					<p class="mBusinessText" style="margin-bottom: 0px;">조리시간(Cooking Time) : <%= results[i].cookTime %>분</p>
+					<br><p class='mBusinessMiddleText' style="margin-bottom: 5px;">평균 별점 (Average Grade)</p>	
+					<p class='mBusinessMiddleText' style="margin-bottom: 5px;">( 참여인원 : <%= results[i].avgCnt %>명 )</p>
+					<p class="<%= results[i].id %>" style="margin-bottom: 0px;"></p> 
 	
-	//부 메뉴 정보
-    var sideMenu_list = infomation.sideMenu;
-    var sideMenu_count  = sideMenu_list.length;
-    var side_information = "";
-	var source03 = "<img src='";
-    var source04 = "'/><br>";
-                
-	for(var i=0; i<sideMenu_count; i++){
-    	//내용물이 null값인지 아닌지 확인
-        if(sideMenu_list[i].side_name==isNull){
-			sideMenu_list[i].side_name="";
-		}
-        if(sideMenu_list[i].side_picture==isNull){
-        	sideMenu_list[i].side_picture="";
-			source03="";		//Side Menu 이미지 없을 시 이미지 부분 공백 처리 
-			source04="";	
+					<!-- 평균 별점 Section -->				
+					<script>
+					var starId = <%= results[i].id %>;
+					var starAvg = <%= results[i].starAvg %>; 
+					// console.log(starId + "의 별 평점 : " + starAvg);
+					var isNull= null;
+	                if( starAvg == isNull){
+	                	var ratingAvg = "<div class='section-contents2'><img src='/images/star00.png' width='50%'></div><br>";
+	                    $("." + starId ).html('').append(ratingAvg);
+					}
+	                
+	                if( 0.5 <= starAvg && starAvg <= 1.4 ){
+	                	var ratingAvg = "<div class='section-contents2'><img src='/images/star01.png' width='50%'></div><br>";
+	                    $("." + starId ).html('').append(ratingAvg);
+					}
+	                
+	                if( 1.5 <= starAvg && starAvg <= 2.4 ){
+	                	var ratingAvg = "<div class='section-contents2'><img src='/images/star02.png' width='50%'></div><br>";
+	                    $("." + starId ).html('').append(ratingAvg);
+					}
+	                
+	                if( 2.5 <= starAvg && starAvg <= 3.4 ){
+	                	var ratingAvg = "<div class='section-contents2'><img src='/images/star03.png' width='50%'></div><br>";
+	                    $("." + starId ).html('').append(ratingAvg);
+					}
+	                
+					if( 3.5 <= starAvg && starAvg <= 4.4 ){
+	                	var ratingAvg = "<div class='section-contents2'><img src='/images/star04.png' width='50%'></div><br>";
+	                    $("." + starId ).html('').append(ratingAvg);
+					}
+	                
+	                if( 4.5 <= starAvg && starAvg <= 5.4 ){
+	                	var ratingAvg = "<div class='section-contents2'><img src='/images/star05.png' width='50%'></div><br>";
+	                    $("." + starId ).html('').append(ratingAvg);
+					}
+					</script>
+					<!-- 평균 별점 Section 끝 -->
+	                
+	                <a class="remodal-confirm" onclick="location.href='http://117.16.231.212:8010/mAvgStar'">평가하기</a>
+					<a id="<%=results[i].id %>" class="remodal-cancel" href="#modal">자세히보기</a>
+					<% } %>   
+				</div>
+			</div>
+		</div>
+	 	<!-- End Contetns -->
+	 	
+		<!-- Modal -->
+		<div class="remodal" data-remodal-id="modal">
+		
+		<!-- <div class="modal-header" align="center"></div> -->
+		<div class="modal-body" align="center"></div>
+		                <div class="modal-footer">
+		                </div>
+		  <br>
+		  <a class="remodal-cancel" href="#">Cancel</a>
+		  <a class="remodal-confirm" href="#">OK</a>
+		</div>
+		
+		<script>
+		<% for(var i=0; i<results.length; i++){ %>
+			//console.log(<%= results[i].id %>);	//디버깅 작업
+			$('#'+<%= results[i].id %>).click( function(){ test('menuFinder/detail?id='+<%= results[i].id %>) } );
+		<% } %>
+		
+		function test(value){
+			var url_value= value;
+			$.ajax({
+				type : "GET",
+			   	url: url_value,
+				async: false,
+				dataType:'json',
+				success: response_json
+			});
 		}
 		
-	side_information += "<br>"+ sideMenu_list[i].side_name+"<br>" +
-    					source03 + sideMenu_list[i].side_picture + source04;
-	}
-
-	var major_information = "<div class='mMain-Big-title' align='center'>"+
-							info_krName+"<br>"+info_enName+"</div>"+"<hr>"+
-							"조리시간 : " + info_cookTime + "분<br>" +
-        					"가격 : " + info_price + "원<br>" + 
-                            "재료 : " + info_compose + "<br>" + 
-                            info_detail + "<br>" + 
-                            source01 + info_ingre_picture + source02 + 
-                            "<p class='mBusinessMiddleText'>"+info_ingre_krName +" "+
-							info_ingre_enName + "</p>" +
-                            info_ingre_detail + "<br>" + "<br>" + 
-                            "<p class='mBusinessMiddleText'>"+info_ingre_addTitle + "</p>" + 
-                            info_ingre_addDetail + "<br>" + "<hr>" +
-			    "<div class='mMain-title' align='center'>" + "SIDE MENU" + "</div> " + side_information; 
+		function response_json(json) {
+			//주 메뉴 정보
+		    var infomation = json.data;
+		    var info_krName = infomation.krName;
+		    var info_enName = infomation.enName;
+		    var info_cookTime = infomation.cookTime;
+		    var info_price = infomation.price;
+		    var info_compose = infomation.compose;
+		    var info_detail = infomation.detail;
+		    var info_ingre_picture = infomation.ingre_picture;
+		    var info_ingre_krName = infomation.ingre_krName;
+		    var info_ingre_enName = infomation.ingre_enName;
+		    var info_ingre_detail = infomation.ingre_detail;
+		    var info_ingre_addTitle = infomation.ingre_addTitle;
+		    var info_ingre_addDetail = infomation.ingre_addDetail;
+		
+			//mobile 상에서 출력 이미지 없을 시 <img src=''> < />
+			// '?' 모양으로 출력되기 때문에 java script 코드를 변수로 대입하여 사용
+			var source01 = "<img src='";
+			var source02 = "'/><br>";
+		
+			//내용물이 null값인지 아닌지 확인
+			var isNull= null;
+			if(info_ingre_krName==isNull){
+				info_ingre_krName="";
+			}
+			if(info_ingre_enName==isNull){
+		    	info_ingre_enName="";
+		    }
+			if(info_ingre_detail==isNull){
+				info_ingre_detail="";
+			}
+			if(info_ingre_addTitle==isNull){
+		    	info_ingre_addTitle="";
+		    }
+			if(info_ingre_addDetail==isNull){
+		    	info_ingre_addDetail="";
+			}
+			if(info_ingre_picture==isNull){
+		    	info_ingre_picture="";
+				source01="";            //Main Menu 이미지  없을 시 이미지 부분 공백 처리
+				source02="";
+			}
+			
+			//부 메뉴 정보
+		    var sideMenu_list = infomation.sideMenu;
+		    var sideMenu_count  = sideMenu_list.length;
+		    var side_information = "";
+			var source03 = "<img src='";
+		    var source04 = "'/><br>";
+		                
+			for(var i=0; i<sideMenu_count; i++){
+		    	//내용물이 null값인지 아닌지 확인
+		        if(sideMenu_list[i].side_name==isNull){
+					sideMenu_list[i].side_name="";
+				}
+		        if(sideMenu_list[i].side_picture==isNull){
+		        	sideMenu_list[i].side_picture="";
+					source03="";		//Side Menu 이미지 없을 시 이미지 부분 공백 처리 
+					source04="";	
+				}
+				
+			side_information += "<br>"+ sideMenu_list[i].side_name+"<br>" +
+		    					source03 + sideMenu_list[i].side_picture + source04;
+			}
+		
+			var major_information = "<div class='mMain-Big-title' align='center'>"+
+									info_krName+"<br>"+info_enName+"</div>"+"<hr>"+
+									"조리시간 : " + info_cookTime + "분<br>" +
+		        					"가격 : " + info_price + "원<br>" + 
+		                            "재료 : " + info_compose + "<br>" + 
+		                            info_detail + "<br>" + 
+		                            source01 + info_ingre_picture + source02 + 
+		                            "<p class='mBusinessMiddleText'>"+info_ingre_krName +" "+
+									info_ingre_enName + "</p>" +
+		                            info_ingre_detail + "<br>" + "<br>" + 
+		                            "<p class='mBusinessMiddleText'>"+info_ingre_addTitle + "</p>" + 
+		                            info_ingre_addDetail + "<br>" + "<hr>" +
+					    			"<div class='mMain-title' align='center'>" + "SIDE MENU" + "</div> " + side_information; 
+		
+			//html('')는 기존의 정보 Clear
+		    $(".modal-body").html('').append(major_information);
+		}
+		
+		</script>
+		
+		<!-- Events -->
+		<script>
+		  $(document).on("open", ".remodal", function () {
+		    console.log("open");
+		  });
+		
+		  $(document).on("opened", ".remodal", function () {
+		    console.log("opened");
+		  });
+		
+		  $(document).on("close", ".remodal", function (e) {
+		    console.log('close' + (e.reason ? ", reason: " + e.reason : ''));
+		  });
+		
+		  $(document).on("closed", ".remodal", function (e) {
+		    console.log('closed' + (e.reason ? ', reason: ' + e.reason : ''));
+		  });
+		
+		  $(document).on("confirm", ".remodal", function () {
+		    console.log("confirm");
+		  });
+		
+		  $(document).on("cancel", ".remodal", function () {
+		    console.log("cancel");
+		  });
+		</script>
 	 
-
-
-	//html('')는 기존의 정보 Clear
-    $(".modal-body").html('').append(major_information);
-/*
-    var rating_bar = "<div class='mMain-title' align='center'>" + "평가하기" + "</div>" + "<br>" + 
-			"<div>" +
-			"<button id='star01'><img src='/images/star_1.png' width='65%'></button>" + "<br>" +
-
-			"<button id='star02'><img src='/images/star_2.png' width='65%'></button>" + "<br>" +
-			"<button id='star03'><img src='/images/star_3.png' width='65%'></button>" + "<br>" +
-			"<button id='star04'><img src='/images/star_4.png' width='65%'></button>" + "<br>" +
-			"<button id='star05'><img src='/images/star_5.png' width='65%'></button>" + "<br>" +
-			"</div>" + "<br>" + "<br>";
-
-    $(".modal-header").html('').append(rating_bar);
-*/
-}
-
-</script>
-
-<!-- Events -->
-<script>
-  $(document).on("open", ".remodal", function () {
-    console.log("open");
-  });
-
-  $(document).on("opened", ".remodal", function () {
-    console.log("opened");
-  });
-
-  $(document).on("close", ".remodal", function (e) {
-    console.log('close' + (e.reason ? ", reason: " + e.reason : ''));
-  });
-
-  $(document).on("closed", ".remodal", function (e) {
-    console.log('closed' + (e.reason ? ', reason: ' + e.reason : ''));
-  });
-
-  $(document).on("confirm", ".remodal", function () {
-    console.log("confirm");
-  });
-
-  $(document).on("cancel", ".remodal", function () {
-    console.log("cancel");
-  });
-</script>
- 
-	<!-- Footer -->
-	<div data-role="footer" data-theme="a">
-    	<h4>&copy; 2015 YAHA Team Project</h4>
-	</div>
-	<!-- End Footer -->
+		<!-- Footer -->
+		<div data-role="footer" data-theme="a">
+	    	<h4>&copy; 2015 YAHA Team Project</h4>
+		</div>
+		<!-- End Footer -->	
 	
 	</body>
 </html>
