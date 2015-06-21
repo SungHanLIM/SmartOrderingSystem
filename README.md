@@ -3,13 +3,6 @@
 
 YAHA(Youthful Ardor, Hopeful Advance) Project
 
-[ 프로젝트 참여 인원 ]
-인천대학교 김영성 
-인천대학교 김희승 
-인천대학교 송민아 
-인천대학교 이상현 
-인천대학교 임승한
-
 < Section URL > ( 모바일 기기에 최적화해서 개발 ) (스마트폰 or other Mobile Device으로 접속해서 확인 가능)
 
 메인화면 http://117.16.231.212:8010/mMain
